@@ -4,4 +4,4 @@
 ## Stargazers over time
 [![Stars](https://starchart.cc/senseyn/NYA.svg?variant=adaptive)](https://starchart.cc/senseyn/NYA)
 
-<a href="NYA">*BACK TO TOP*</a>
+<a href="README">*BACK TO TOP*</a>
