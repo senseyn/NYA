@@ -8,7 +8,7 @@
 
 
 
-<img width="655" height="463" alt="е" src="https://stepik.org/certificate/29781b24f136096fcc995e4d00adceca1d8c5d5f.png?resolution=high">
+<img width="655" height="463" alt="изображение" src="https://stepik.org/certificate/29781b24f136096fcc995e4d00adceca1d8c5d5f.png?resolution=high">
 
 <img width="655" height="463" alt="изображение" src="https://stepik.org/certificate/c5d90fc9-5d75-4e28-8204-b385b74d2b01.png?resolution=high"/>
 
