@@ -1,4 +1,4 @@
-<p align="center"><b>NYA</b></p>
+<p align="center"><h1>NYA</h1></p>
 <a id="top"></a>
 ___
 ### ANIME WEB APP
