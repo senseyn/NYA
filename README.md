@@ -4,7 +4,7 @@
 ### <p align="center"><b>ANIME WEB APP</b></p>
 
 
-[![Stars](https://starchart.cc/senseyn/NYA.svg?variant=adaptive)](https://starchart.cc/senseyn/NYA)
+[![Stars](https://starchart.cc/senseyn/NYA.svg?variant=adaptive)](https://starchart.cc/senseyn/NYA) 
 
 
 
