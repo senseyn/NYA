@@ -1,7 +1,7 @@
 <a id="top"></a>
 # <p align="center"><b>NYA :rocket:</b></p>
 
-### <p align="center"><b>**WEB APP**</b></p>
+## <p align="center"><b>**WEB APP**</b></p>
 
 
 [![Stars](https://starchart.cc/senseyn/NYA.svg?variant=adaptive)](https://starchart.cc/senseyn/NYA) 
