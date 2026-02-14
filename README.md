@@ -14,5 +14,4 @@
 
 [![Top contributors](https://contrib.rocks/image?repo=senseyn/NYA)](https://github.com/senseyn/NYA.git)
 
-<a href="#top">*BACK TO TOP*</a>
-
+<a href="#top">💔</a>
