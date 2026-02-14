@@ -1,7 +1,94 @@
-### NYA
+### <a id="top">NYA</a>
+
 ## ANIME WEB APP
                         
 ## Stargazers over time
 [![Stars](https://starchart.cc/senseyn/NYA.svg?variant=adaptive)](https://starchart.cc/senseyn/NYA)
 
-<a href="README">*BACK TO TOP*</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="top">*BACK TO TOP*</a>
