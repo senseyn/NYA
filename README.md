@@ -8,7 +8,6 @@
 ```
 
 <a id="top"></a>
-# <p align="center"><b>NYA :rocket:</b></p>
 
 ## <p align="center"><b>**WEB APP**</b></p>
 
