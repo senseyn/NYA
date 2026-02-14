@@ -1,8 +1,8 @@
-# NYA
-ANIME WEB APP
+### NYA
+## ANIME WEB APP
                         
 ## Stargazers over time
-[![Stars](https://starchart.cc/senseyn/NYA.svg?variant=adaptive)](https://starchart.cc/senseyn/NYA)
+[!(https://starchart.cc/senseyn/NYA.svg?variant=adaptive)](https://starchart.cc/senseyn/NYA)
 
                     
 
