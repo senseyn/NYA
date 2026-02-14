@@ -1,5 +1,5 @@
 <a id="top"></a>
-# <p align="center"><b>NYA</b></p>
+# <p align="center"><b>NYA :rocket:</b></p>
 
 ### <p align="center"><b>ANIME WEB APP</b></p>
 
