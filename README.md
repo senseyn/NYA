@@ -2,8 +2,8 @@
 # <p align="center"><b>NYA</b></p>
 
 ### <p align="center"><b>ANIME WEB APP</b></p>
-                        
-#### Stargazers over time
+
+
 [![Stars](https://starchart.cc/senseyn/NYA.svg?variant=adaptive)](https://starchart.cc/senseyn/NYA)
 
 
