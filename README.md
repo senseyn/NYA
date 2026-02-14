@@ -8,9 +8,10 @@
 
 
 
-<img src="https://forum-cdn.exbo.net/2022-03-30/1648661633-843586-5-79uqzh4z6dwmgllxgo3q.jpg">
+<img src="[https://forum-cdn.exbo.net/2022-03-30/1648661633-843586-5-79uqzh4z6dwmgllxgo3q.jpg](https://yandex.kz/video/preview/3337046921478840024)">
 
 
 [![Top contributors](https://contrib.rocks/image?repo=senseyn/NYA)](https://github.com/senseyn/NYA.git)
 
 <a href="#top">*BACK TO TOP*</a>
+
