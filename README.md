@@ -15,16 +15,10 @@
 
 [![Stars](https://starchart.cc/senseyn/NYA.svg?variant=adaptive)](https://starchart.cc/senseyn/NYA) 
 
-
-<<<<<<< HEAD
-<img width="655" height="463" alt="w3o6paxeHne" src="https://stepik.org/certificate 29781b24f136096fcc995e4d00adceca1d8c5d5f.pna?resolution=high">
-<img width="655" height="463" alt="u3o6paxeHue" src="https://stepik.org/certificate /16329fcd94ba72e20977ce95d81c83580c10fad1.png?resolution=high">
-=======
-
 <img width="655" height="463" alt="изображение" src="https://stepik.org/certificate/29781b24f136096fcc995e4d00adceca1d8c5d5f.png?resolution=high">
 
 <img width="655" height="463" alt="изображение" src="https://stepik.org/certificate/16329fcd94ba72e20977ce95d81c83580c10fad1.png?resolution=high">
->>>>>>> parent of 24b4e73 (Update README.md)
+
 
 [![Top contributors](https://contrib.rocks/image?repo=senseyn/NYA)](https://github.com/senseyn/NYA.git)
 
