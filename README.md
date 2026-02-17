@@ -28,7 +28,7 @@
     <img alt="github-snake" src="https://raw.githubusercontent.com/senseyn/senseyn/output/github-contribution-grid-snake.svg" />
   </picture>
 </div>
------------
+--------
 <h1 align="center">
   <a href="#top">| 💔 |</a>
 </h1>
