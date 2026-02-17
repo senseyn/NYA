@@ -19,16 +19,22 @@
 
 
 ---
-
-
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/senseyn/senseyn/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/senseyn/senseyn/output/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/senseyn/senseyn/output/github-contribution-grid-snake.svg" />
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/senseyn/NYA/output/github-contribution-grid-snake-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/senseyn/NYA/output/github-contribution-grid-snake.svg"
+    />
+    <img
+      alt="github contribution grid snake animation"
+      src="https://raw.githubusercontent.com/senseyn/NYA/output/github-contribution-grid-snake.svg"
+    />
   </picture>
 </div>
-
 ---
 <h1 align="center">
   <a href="#top">| 💔 |</a>
