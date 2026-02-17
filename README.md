@@ -17,12 +17,6 @@
 
 [![Top contributors](https://contrib.rocks/image?repo=senseyn/NYA)](https://github.com/senseyn/NYA.git)
 
-
----
-<div align="center">
-  <img src="https://api.snake.jfoucher.com/?username=senseyn" alt="GitHub Snake" />
-</div>
----
 <h1 align="center">
   <a href="#top">| 💔 |</a>
 </h1>
