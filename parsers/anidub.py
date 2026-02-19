@@ -12,7 +12,6 @@ for link in anime_links:
     if "Законченные сериалы" in title:
         continue
     url = link['href']
-    print(f"{title} -> {url}")
 
     anime_site = requests.get(f'{url}').content
     soups = BeautifulSoup(anime_site, 'lxml')
@@ -29,3 +28,4 @@ for link in anime_links:
         href = files['href']
         with open(f'{clean_filename(title_name.text)}.torrent', 'wb') as f:
             f.write(requests.get(f"https://tr.anidub.com{href}").content)
+
