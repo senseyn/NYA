@@ -9,14 +9,14 @@ import schedule
 from icecream import ic
 import json
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def get_anime_torrent_file():
-
     try:
         number = 1
-
-        for i in range(1,136):
+        for i in range(1,2):
             response = requests.get(f'https://tr.anidub.com/anime_tv/full/page/{number}/')
             soup = BeautifulSoup(response.text, 'lxml')
             anime_links = soup.select('div.lcol a[href*="/anime_tv/full/"]')
@@ -68,30 +68,29 @@ def get_anime_torrent_file():
                     with open(f'torrent_file/{clean_filename(title_name.text)}.torrent', 'wb') as f:
                         f.write(requests.get(f"https://tr.anidub.com{href}").content)
             number += 1
-
     except Exception as e:
         print(e)
 
 def down_anime_title():
     try:
         conn_info = dict(
-            host="localhost",
-            port=8080,
-            username="FAKE",
-            password="202000",
+            host=os.getenv('QB_HOST'),
+            port=int(os.getenv('QB_PORT')),
+            username=os.getenv('QB_USER'),
+            password=int(os.getenv('QB_PASS')),
         )
         ic(conn_info)
         client = qbittorrentapi.Client(**conn_info)
         ic(client)
 
         client.auth_log_in()
-        torrent_files = glob.glob('torrent_file/*.torrent')
+        torrent_files = glob.glob(os.getenv('TORR_FILE'))
         ic(torrent_files)
         for torrent_file in torrent_files:
             with open(f'{torrent_file}', 'rb') as f:
                 client.torrents_add(
                     torrent_files=[f],
-                    save_path="C:/Users/fake/PycharmProjects/saitsave_anime_title/",
+                    save_path=os.getenv('SAVE_PATH'),
                     is_paused=False
                 )
 
