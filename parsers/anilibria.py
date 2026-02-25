@@ -6,8 +6,19 @@ import qbittorrentapi
 import os
 
 load_dotenv()
+
+conn_info = dict(
+        host=os.getenv('QB_HOST'),
+        port=int(os.getenv('QB_PORT')),
+        username=os.getenv('QB_USER'),
+        password=int(os.getenv('QB_PASS')),
+    )
+
+client = qbittorrentapi.Client(**conn_info)
+client.auth_log_in()
+
 options = webdriver.FirefoxOptions()
-# options.add_argument('--headless')
+options.add_argument('--headless')
 driver = webdriver.Firefox(options=options)
 driver.get("https://anilibria.top/anime/torrents/")
 driver.implicitly_wait(5)
@@ -21,17 +32,8 @@ for title_name in get_title_name:
     print(title_name.text)
 get_magnet_url = soup.find_all('a', class_='v-btn v-btn--flat v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-flat px-2 br-root ml-1')
 for a in get_magnet_url:
+
     magnet_link = a.get('href')
-
-    conn_info = dict(
-        host=os.getenv('QB_HOST'),
-        port=int(os.getenv('QB_PORT')),
-        username=os.getenv('QB_USER'),
-        password=int(os.getenv('QB_PASS')),
-    )
-
-    client = qbittorrentapi.Client(**conn_info)
-    client.auth_log_in()
     client.torrents.add(urls=magnet_link, save_path=os.getenv('SAVE_PATH'))
 
 time.sleep(2)
