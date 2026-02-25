@@ -7,10 +7,8 @@ import re
 import qbittorrentapi
 import schedule
 from icecream import ic
-
-
-
-anime_name_list = []
+import json
+import os
 
 
 def get_anime_torrent_file():
@@ -20,7 +18,6 @@ def get_anime_torrent_file():
 
         for i in range(1,136):
             response = requests.get(f'https://tr.anidub.com/anime_tv/full/page/{number}/')
-            ic(response)
             soup = BeautifulSoup(response.text, 'lxml')
             anime_links = soup.select('div.lcol a[href*="/anime_tv/full/"]')
             for link in anime_links:
@@ -28,14 +25,38 @@ def get_anime_torrent_file():
                 if "Законченные сериалы" in title:
                     continue
                 url = link['href']
-                if url in anime_name_list:
+
+                exists = False
+                if os.path.exists('save_anime_title.json'):
+                    with open('save_anime_title.json', 'r', encoding='utf-8') as f:
+                        for line in f:
+                            try:
+                                existing_data = json.loads(line)
+                                if existing_data.get('url') == url:
+                                    exists = True
+                                    break
+                            except json.JSONDecodeError:
+                                continue
+
+                if exists:
+                    print('Skip: ', url)
                     continue
-                anime_name_list.append(url)
+
                 anime_site = requests.get(f'{url}').content
                 soups = BeautifulSoup(anime_site, 'lxml')
                 file = soups.find('div', class_='torrent_h').find_all('a')
                 title_name = soups.find('span', id='news-title')
+
+                anime_data = {
+                    "name": title_name.text,
+                    "url": url,
+                }
+
+                with open('save_anime_title.json', 'a', encoding='utf-8') as f:
+                    f.write(json.dumps(anime_data, ensure_ascii=False) + '\n')
+
                 print('Save: ', title_name.text)
+
                 def clean_filename(filename):
                     invalid_chars = r'[\\/*?:"<>|]'
                     cleaned = re.sub(invalid_chars, '!', filename)
@@ -62,8 +83,6 @@ def down_anime_title():
         ic(conn_info)
         client = qbittorrentapi.Client(**conn_info)
         ic(client)
-        print(f"qBittorrent: {client.app.version}")
-        print(f"qBittorrent Web API: {client.app.web_api_version}")
 
         client.auth_log_in()
         torrent_files = glob.glob('torrent_file/*.torrent')
