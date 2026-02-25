@@ -5,13 +5,22 @@ from bs4 import BeautifulSoup
 import lxml
 import re
 import qbittorrentapi
-import schedule
 from icecream import ic
 import json
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
+conn_info = dict(
+            host=os.getenv('QB_HOST'),
+            port=int(os.getenv('QB_PORT')),
+            username=os.getenv('QB_USER'),
+            password=int(os.getenv('QB_PASS')),
+        )
+ic(conn_info)
+client = qbittorrentapi.Client(**conn_info)
+ic(client)
+client.auth_log_in()
 
 def get_anime_torrent_file():
     try:
@@ -50,6 +59,7 @@ def get_anime_torrent_file():
                 anime_data = {
                     "name": title_name.text,
                     "url": url,
+                    "voice": "anidub"
                 }
 
                 with open('save_anime_title.json', 'a', encoding='utf-8') as f:
@@ -73,17 +83,6 @@ def get_anime_torrent_file():
 
 def down_anime_title():
     try:
-        conn_info = dict(
-            host=os.getenv('QB_HOST'),
-            port=int(os.getenv('QB_PORT')),
-            username=os.getenv('QB_USER'),
-            password=int(os.getenv('QB_PASS')),
-        )
-        ic(conn_info)
-        client = qbittorrentapi.Client(**conn_info)
-        ic(client)
-
-        client.auth_log_in()
         torrent_files = glob.glob(os.getenv('TORR_FILE'))
         ic(torrent_files)
         for torrent_file in torrent_files:
