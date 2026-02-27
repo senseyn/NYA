@@ -1,0 +1,19 @@
+#ФАЙЛЫ ИГНОРА
+
+#временные файлы
+.venv
+__pycache__/
+env/
+venv/
+ENV/
+
+
+# Distributions
+*.idea
+
+# Environment variables
+.env
+.flaskenv
+
+# Specific directories
+#....

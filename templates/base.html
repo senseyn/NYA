@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!-- СКРИПТЫ -->
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+
+    <meta property="og:title" content="Заголовок страницы в OG">
+    <meta property="og:description" content="Описание страницы в OG">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <header class="container navbar">
+        <span class="logo"><a href="/">NYA</a></span>
+        <nav>
+          <ul>
+            <li><button onclick="window.location.href='catalog.html'" type="button">аниме</button></li>
+            <li><button onclick="window.location.href='#'" type="button">огоинг</button></li>
+            <li>
+              <div>
+                <input type="text" name="search" placeholder="поиск аниме">
+                <img src="{{ url_for('static', filename='img/search.svg') }}" class="input-icon" alt="icon">
+              </div>
+            </li>
+            <li><button onclick="window.location.href='{{ url_for('login') }}'" type="button">войти</button></li>
+            <li>
+              <button id="spin-button" type="button">
+                <img src="{{ url_for('static', filename='img/refresh-cw.svg') }}" alt="Иконка">
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="video-background">
+        <video autoplay muted loop playsinline poster="#">
+          <source src="{{ url_for('static', filename='video/1.mp4') }}" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero container">
+        <div class="hero--info">
+          <h1>Лучший сайт для просмотра аниме без впн и прочей шняги, он реально лучший сайт в России, отвечаю просто</h1>
+          <p>Аниме — это не то, что можно придумать в зале для совещаний! Оно сделано из странных соков, текущих из мозга аниматоров.</p>
+        </div>
+        <img src="{{ url_for('static', filename='img/masscat1.png') }}" alt="">
+      </div>
+
+      <div class="container trending">
+        <a href="#" class="see-all">БОЛЬШЕ</a>
+        <h3>Аниме 2026</h3>
+
+        <div class="anime">
+          <div class="block">
+            <img src="{{ url_for('static', filename='img/1.png') }}" alt="">
+            <span>НАЗВАНИЕ АНИМЕ</span>
+          </div>
+          <div class="block">
+            <img src="{{ url_for('static', filename='img/1.png') }}" alt="">
+            <span>НАЗВАНИЕ АНИМЕ</span>
+          </div>
+          <div class="block">
+            <img src="{{ url_for('static', filename='img/1.png') }}" alt="">
+            <span>НАЗВАНИЕ АНИМЕ</span>
+          </div>
+          <div class="block">
+            <img src="{{ url_for('static', filename='img/1.png') }}" alt="">
+            <span>НАЗВАНИЕ АНИМЕ</span>
+          </div>
+        </div>
+        <div>
+            <video src="https://cloud.kodik-storage.com/useruploads/123d6a99-0881-47ef-8cda-2b81dc49df4e/b84e0fcce2af312d92ae4f7d25414f2a:2026022709/720.mp4:hls:manifest.m3u8" controls width="640" height="360">
+            Ваш браузер не поддерживает встроенные видео.
+            </video>
+        </div>
+      </div>
+    </div>
+    <!-- ПОДВАЛ САЙТА -->
+    <footer class="wrapper-footer">
+      <div class="footer-container">
+        <img src="{{ url_for('static', filename='img/sakura.png') }}" alt="сакура">
+        <p class="OOO">ПОДВАЛ САЙТА ВУИИИИИИ</p>
+        <p>ПОДВАЛ САЙТА ВУИИИИИИ</p>
+        <p>ПОДВАЛ САЙТА ВУИИИИИИ</p>
+        <p>ПОДВАЛ САЙТА ВУИИИИИИ</p>
+        <p>ПОДВАЛ САЙТА ВУИИИИИИ</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>

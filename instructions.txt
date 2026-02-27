@@ -1,0 +1,5 @@
+#ЗАПУСК ВИРТУАЛКИ:
+Set-ExecutionPolicy RemoteSigned -Scope Process
+.venv/Scripts/activate
+
+#ЗАПУСК ЛОКАЛКИ:

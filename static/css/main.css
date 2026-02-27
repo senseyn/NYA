@@ -1,0 +1,312 @@
+/* ПЕРЕМЕННЫЕ */
+:root {
+	/* ФОН САЙТА */
+	--background-wrapper-color: #000;
+
+	/* цвет текста */
+	--white-text: #fff;
+
+	/* жидкое стекло блоки */
+	--background-glass: rgba(255, 255, 255, 0.12);
+	--blur-glass-filter: blur(18px);
+	--glass-shadow: 6px 7px 28px -4px rgba(0,0,0,0.72);
+	--border-glass-top: 1px solid rgba(255, 255, 255, 0.4);
+	--border-glass-left: 1px solid rgba(255, 255, 255, 0.3);
+	--border-glass-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+	/* жидкое стекло кнопки */
+	--button-glass-background: rgba(255, 255, 255, 0.12);
+	--button-glass-blur: blur(18px);
+	--button-glass-shadow: ;
+	--button-border-glass-top: 1px solid rgba(255, 255, 255, 0.4);
+	--button-border-glass-left: 1px solid rgba(255, 255, 255, 0.3);
+
+	--hover-button-background: rgba(41, 41, 41, 0.67);
+	--hover-button-blur: blur(30px);
+
+
+	/* жидкое поле ввода */
+	--input-glass-background: rgba(255, 255, 255, 0.12);
+	--input-glass-blur: blur(18px);
+	--input--glass-border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ШРИФТЫ */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* для формы регистрации */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+/* ПРЕДНАСТРОЙКИ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	color: var(--white-text);
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--white-text);
+}
+
+img {
+	width: 100%;
+}
+
+.wrapper {
+	background: var(--background-wrapper-color);
+	width: 100%;
+	z-index: 2;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* МЕНЮ НАВИГАЦИИ */
+header {
+	padding: 10px 10px;
+	border-radius: 27px;
+}
+
+header .logo {
+	font-family: 'Archivo Black', sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 800;
+	padding-left: 11px;
+
+	color: var(--white-text);
+}
+
+header nav {
+	float: right;
+	width: 45%;
+	align-content: center;	
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+header nav ul li {
+	padding-right: 2px;
+}
+
+header nav ul li button {
+	color: var(--white-text);
+	margin-top: 2px;
+	padding: 12px 23px;
+	cursor: pointer;
+	border: none;
+	border-radius: 30px;
+
+	background: var(--button-glass-background);
+	backdrop-filter: var(--button-glass-blur);
+	-webkit-backdrop-filter: var(--blur-glass-filter);
+
+	border-top: var(--button-border-glass-top);
+	border-left: var(--button-border-glass-left);
+
+	transition: all 0.3s ease;
+}
+
+header nav ul li button:hover {
+	background: var(--hover-button-background);
+	background-filter: var(--hover-button-blur);
+	transform: scale(1.2);
+}
+
+header nav ul li div input {
+	margin-top: 2px;
+	padding: 12px 3px;
+	box-sizing: border-box;
+	border-radius: 30px;
+
+	background: var(--input-glass-background);
+	background-filter: var(--input-glass-blur);
+	-webkit-background-filter: var(--input-glass-blur);
+
+	border: var(--input--glass-border);
+}
+
+header nav ul li div input::placeholder {
+  	color: var(--white-text);
+}
+
+.input-icon {
+	color: var(--white-text);
+	position: relative;
+	padding-right: 0px;
+	width: 30px;
+    height: 30px;
+	position: absolute;
+	display: flex;
+	top: 6px;
+	margin-left: 130px;
+	cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+
+#spin-button {
+	margin-right: 2px;
+	padding: 7px;
+	width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: brightness(0) invert(1);
+}
+
+.navbar {
+	z-index: 1000;
+	position: fixed;
+	width: 96%;
+	top: 5px;
+	left: 13px;
+
+	background: var(--background-glass);
+	backdrop-filter: var(--blur-glass-filter);
+	-webkit-backdrop-filter: var(--blur-glass-filter); /* для safari */
+
+	border-top: var(--border-glass-top);
+	border-left: var(--border-glass-left);
+	border-bottom: var(--border-glass-bottom);
+
+	-webkit-box-shadow: var(--glass-shadow); /* для safari */
+	box-shadow: var(--glass-shadow);
+}
+
+/* ОСНОВА САЙТА */
+.video-background video {
+	opacity: 0.8;
+	position: fixed;
+	transform: scale(1);
+	top: 0;
+    width: 100%;
+    z-index: 1;  /* видео покрывает весь фон */
+}
+
+.hero {
+	padding-bottom: 150px;
+	position: relative;
+	z-index: 3;
+}
+
+.hero--info {
+	width: 530px;
+	padding-top: 200px;
+}
+
+.hero--info h1 {
+	font-family: 'Archivo Black', sans-serif;
+	color: var(--white-text);
+	font-size: 28px;
+	font-weight: 900;
+}
+
+.hero--info	p {
+	font-weight: 500;
+	line-height: 170%;
+	margin: 30px 0;
+}
+
+.hero img {
+	transform: scaleX(-1);
+	width: 300px;
+	height: auto;
+	position: absolute;
+	top: 100px;
+	right: 0;
+}
+
+/* ТОП 2026 */
+.trending {
+	position: relative;
+	padding-top: 50px;
+	z-index: 3;
+}
+.trending h3 {
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.trending .see-all {
+	color: var(--white-text);
+	background: #25211D;
+	border-radius: 15px;
+	padding: 12px 20px;
+	float: right;
+	display: block;
+}
+
+.trending .see-all:hover {
+	transform: scale(1.1);
+}
+
+.trending .anime {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 15px 0 50px;
+}
+
+.trending .anime span {
+	display: block;
+	margin-top: 20px;
+}
+
+.trending .block {
+	transform: scale(0.95);
+}
+
+/* ФОРМА РЕГИСТРАЦИИ */
+.registration-form {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+
+/* ПОДВАЛ САЙТА */
+footer {
+	position: relative;
+	padding: 20px 0 20px;
+	z-index: 3;
+}
+
+.wrapper-footer {
+	background: #000;
+}
+
+.footer-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-container img {
+	width: 100px; 
+	height: auto;
+	position: absolute;
+	right: 20px;
+	padding-bottom: 20px;
+}
+
+/* АНИМАЦИИ */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(1440deg); }
+}
+
+.rotating {
+    animation: spin 10s ease-in-out;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!-- СКРИПТЫ -->
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+
+    <meta property="og:title" content="Заголовок страницы в OG">
+    <meta property="og:description" content="Описание страницы в OG">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="container">
+        <span class="logo"><a href="/">NYA</a></span>
+        <nav>
+          <ul>
+            <li><a href="catalog.html">Аниме</a></li>
+            <li><a href="#">Огоинг</a></li>
+            <li><a href="#">ПОИСК</a></li>
+            <li class="active"><a href="#">Войти</a></li>
+            <li><a href="#">ТЕМ</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="registration-form">
+      <form action="">
+        <h2">Войти в акаунт</h2>
+      <div class="imput-box">
+        <input type="text" pattern="^[a-zA-Z0-9_.-]*$" placeholder="Логин" required>
+        <img src="https://static.insales-cdn.com/images/products/1/7549/286203261/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9.jpg" class="bx bx-user">
+      </div>
+      <div class="imput-box">
+        <input type="password" placeholder="Логин" required>
+        <img src="https://static.insales-cdn.com/images/products/1/7549/286203261/%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9.jpg" class="bx bxs-lock-alt">
+      </div>
+      <div class="remember">
+        <label for=""><input type="checkbox">Запомнить меня</label>
+        <a href="#">Забыл пароль?</a>
+      </div>
+
+      
+      <button type="submit" class="btn-form-registr">Войти</button>
+
+      <div class="register-link">
+        <p>Нету акаунта? <a href="#">Зарегистрироваться</a></p>
+      </div>
+
+      </form>
+    </div>
+    <!-- ПОДВАЛ САЙТА -->
+  </body>
+</html>
