@@ -17,3 +17,6 @@ ENV/
 
 # Specific directories
 #....
+
+#FILES
+static/video/
