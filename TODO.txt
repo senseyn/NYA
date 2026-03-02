@@ -1,3 +1,53 @@
 дописать соглашения и дизайн регистрации
 
 СДЕЛАЙ ****** ПЛЕЕР пожалуйста
+
+pip install postgresql postgresql-contrib
+
+
+########################
+right-holders
+privacy
+agreement
+
+CSS сайты:
+- https://neumorphism.io/
+- https://coolors.co/
+- https://animista.net/
+
+
+=========================================
+   <div>
+      <img class="wrapper-login" src="{{ url_for('static', filename='img/wrapper-login.jpg') }}">
+      <div class="block-login">
+
+        <form method="POST" action="{{ url_for('login') }}">
+          <h2 class="text_title">Войти в акаунт</h2>
+          <div class="input-box">
+            <input type="text" name="username" pattern="^[a-zA-Z0-9_.-]*$" placeholder="Логин" required>
+            <img src="#" class="bx-user">
+          </div>
+          <div class="imput-box">
+            <input type="password" name="password" placeholder="Пароль" required>
+            <img src="#" class="bx-pass">
+          </div>
+          <div class="remember">
+            <label for=""><input type="checkbox">Запомнить меня</label>
+            <a href="#">Забыл пароль?</a>
+          </div>
+          <button type="submit" class="btn-form-registr">Войти</button>
+
+          <div class="register-link">
+            <p>Нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+          </div>
+
+          <!-- ТЕКСТ СОГЛАШЕНИЯ -->
+          <div class="agreement-login">
+            <p>
+              NYA используем файлы cookies для улучшения работы сайта. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="">Политикой использования cookies</a>.
+            </p>
+          </div>
+        </form>
+
+      </div>
+    </div>

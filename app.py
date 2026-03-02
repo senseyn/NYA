@@ -9,37 +9,25 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///nya_v2.db'
 db = SQLAlchemy(app)
 
 
-class Post(db.Model):
-	id = db.Column(db.Integer, primary_key=True)
-	title = db.Column(db.String(20), nullable=False)
-	text =db.Column(db.Text, nullable=False)
-
-
 app.route("/index")
 @app.route("/")
 def index():
-	if request.method == 'POST':
-		print(request.form['title'])
-		print(request.form['text'])
-		return redirect('/')
-	else:
-		return render_template('login.html')
+	return render_template('/user/index.html')
 
 
 @app.route("/login")
 def login():
-	return render_template('login.html')
+	return render_template('/user/login.html')
 
 
-@app.route("/create", methods=['POST', 'GET'])
-def create():
-	if request.method == 'POST':
-		print(request.form['title'])
-		print(request.form['text'])
-		return redirect('/')
-	else:
-		return render_template('create.html')
+@app.route("/player")
+def player():
+	return render_template('/user/player.html')
 
+
+#---ЭКСПЕРЕМЕНТАЛЬНЫЙ ФАЙЛ----#
+
+#------------------------------
 
 if __name__ == "__main__":
 	print("ЗАПУСК СЕРВЕРА")
