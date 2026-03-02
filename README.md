@@ -21,15 +21,22 @@
   <a href="#top">| 💔 |</a>
 </h1>
 
-------
+# ИНСТРУКЦИЯ К ПРОЕКТУ NYA
 ## ЗАПУСК ВИРТУАЛКИ: 
+```powershell
 python -m venv .venv 
 Set-ExecutionPolicy RemoteSigned -Scope Process 
 .venv/Scripts/activate 
+```
+**УСТАНОВКА БИБЛИОТЕК:**
+```powershell
+pip install -r requirements.txt
+```
 
-## УСТАНОВКА БИБЛИОТЕК: pip install -r requirements.txt 
+**ЗАПУСК ЛОКАЛКИ:**
+```powershell
+python app.py
+```
 
-## ЗАПУСК ЛОКАЛКИ: python app.py 
-
-либо с помощью BAT
+Либо запустите START.BAT файл и проект развернется на локльном сервере
 
