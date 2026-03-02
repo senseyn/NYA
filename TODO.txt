@@ -2,7 +2,6 @@
 
 СДЕЛАЙ ****** ПЛЕЕР пожалуйста
 нет 
-да
 
 pip install postgresql postgresql-contrib
 
