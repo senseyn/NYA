@@ -40,3 +40,15 @@ python app.py
 
 Либо запустите START.BAT файл и проект развернется на локльном сервере
 
+
+======
+СКРИНЫ ЗАДАНИЯ:
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/bfabf58b-6057-4653-8c7c-17388d0f89d6" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/22001910-ebe7-440e-b565-d180708b6b83" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/de1ff9d1-382d-4fae-85e3-6ef18b5da8ed" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9d7d101c-95d7-4bbd-b403-254725835edf" />
+
+
+
+
+
