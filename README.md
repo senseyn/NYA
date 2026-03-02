@@ -22,14 +22,14 @@
 </h1>
 
 ------
-##ЗАПУСК ВИРТУАЛКИ: 
+## ЗАПУСК ВИРТУАЛКИ: 
 python -m venv .venv 
 Set-ExecutionPolicy RemoteSigned -Scope Process 
 .venv/Scripts/activate 
 
-##УСТАНОВКА БИБЛИОТЕК: pip install -r requirements.txt 
+## УСТАНОВКА БИБЛИОТЕК: pip install -r requirements.txt 
 
-##ЗАПУСК ЛОКАЛКИ: python app.py 
+## ЗАПУСК ЛОКАЛКИ: python app.py 
 
 либо с помощью BAT
 
