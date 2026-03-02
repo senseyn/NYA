@@ -1,6 +1,7 @@
 дописать соглашения и дизайн регистрации
 
 СДЕЛАЙ ****** ПЛЕЕР пожалуйста
+нет 
 
 pip install postgresql postgresql-contrib
 
