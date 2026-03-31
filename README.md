@@ -100,3 +100,9 @@ Nginx (cache / proxy / HLS delivery)
     </td>
   </tr>
 </table>
+
+---
+
+## Activity
+
+![Snake animation](https://github.com/senseyn/senseyn/blob/output/github-contribution-grid-snake.svg)
