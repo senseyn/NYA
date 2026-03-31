@@ -65,3 +65,22 @@ API Layer (Node.js)
 ---------------------------------
         ↓
 Nginx (cache / proxy / HLS delivery)
+```
+
+---
+
+## Contributors
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/your-username">
+        <img src="https://github.com/your-username.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>Seniorio Zog</b></sub>
+      </a>
+      <br />
+      <sub>Founder / Developer</sub>
+    </td>
+  </tr>
+</table>
