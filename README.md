@@ -1,6 +1,10 @@
 # NYA
 
 ![Status](https://img.shields.io/badge/status-active%20development-black)
+![Stars](https://img.shields.io/github/stars/senseyn/NYA?style=for-the-badge&color=yellow)
+![Forks](https://img.shields.io/github/forks/senseyn/NYA?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/senseyn/NYA?style=for-the-badge)
+
 ![Frontend](https://img.shields.io/badge/frontend-React-blue)
 ![Backend](https://img.shields.io/badge/backend-Node.js%20%7C%20FastAPI-green)
 ![Database](https://img.shields.io/badge/database-PostgreSQL-blueviolet)
@@ -101,8 +105,3 @@ Nginx (cache / proxy / HLS delivery)
   </tr>
 </table>
 
----
-
-## Activity
-
-![Snake animation](https://github.com/senseyn/senseyn/blob/output/github-contribution-grid-snake.svg)
