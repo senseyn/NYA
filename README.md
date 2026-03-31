@@ -4,6 +4,8 @@
 ![Stars](https://img.shields.io/github/stars/senseyn/NYA?style=for-the-badge&color=yellow)
 ![Forks](https://img.shields.io/github/forks/senseyn/NYA?style=for-the-badge)
 ![Issues](https://img.shields.io/github/issues/senseyn/NYA?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/senseyn/NYA)
+![Repo Size](https://img.shields.io/github/repo-size/senseyn/NYA)
 
 ![Frontend](https://img.shields.io/badge/frontend-React-blue)
 ![Backend](https://img.shields.io/badge/backend-Node.js%20%7C%20FastAPI-green)
