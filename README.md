@@ -74,13 +74,22 @@ Nginx (cache / proxy / HLS delivery)
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/your-username">
-        <img src="https://github.com/your-username.png" width="100px;" alt=""/>
+      <a href="https://github.com/senseyn">
+        <img src="https://github.com/your-username.png" width="100px;" alt="Seniorio Zog"/>
         <br />
         <sub><b>Seniorio Zog</b></sub>
       </a>
       <br />
-      <sub>Founder / Developer</sub>
+      <sub>Frontend / Founder</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/FakeFu1ure">
+        <img src="https://github.com/backend-username.png" width="100px;" alt="Backend Dev"/>
+        <br />
+        <sub><b>Backend Developer</b></sub>
+      </a>
+      <br />
+      <sub>Backend</sub>
     </td>
   </tr>
 </table>
