@@ -81,6 +81,8 @@ API Layer (Node.js / FastAPI)
         ↓
 Nginx (cache / proxy / HLS delivery)
 ```
+---
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=senseyn&theme=cobalt&show_icons=true)
 
 ---
 ## ⬇ Чмони 300% ⬇
