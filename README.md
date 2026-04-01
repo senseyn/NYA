@@ -83,7 +83,7 @@ Nginx (cache / proxy / HLS delivery)
 ```
 
 ---
-## Contributors (Чмони 300%) ⬇
+## ⬇ Чмони 300% ⬇
 
 <table>
   <tr>
