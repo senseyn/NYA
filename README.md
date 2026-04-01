@@ -85,7 +85,7 @@ Nginx (cache / proxy / HLS delivery)
 
 
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=40&pause=1000&color=AC00F7&width=435&lines=%E2%AC%87+%D0%A7%D0%BC%D0%BE%D0%BD%D0%B8+300%25+%E2%AC%87)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=35&pause=1000&color=AC00F7&width=435&lines=%E2%AC%87+%D0%A7%D0%BC%D0%BE%D0%BD%D0%B8+300%25+%E2%AC%87)](https://git.io/typing-svg)
 
 <table>
   <tr>
